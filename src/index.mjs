@@ -19,7 +19,7 @@ export const fileStore = async (dir = {}) => {
     throw error(`${libName}: first argument must be a string, received ${typeof dir}`, 'DIR_TYPE')
   }
 
-  if (!path.isabsolute(dir)) {
+  if (!path.isAbsolute(dir)) {
     dir = path.join(process.cwd(), dir)
   }
 
