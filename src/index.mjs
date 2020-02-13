@@ -29,7 +29,7 @@ export const fileStore = async (dir = {}) => {
     throw error(`${libName}: directory ${dir} does not exist.`, 'DIR_NO_EXIST')
   }
 
-  memStore(await getCache(dir))
+  return memStore(await getCache(dir))
 }
 
 export default fileStore
