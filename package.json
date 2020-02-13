@@ -1,0 +1,49 @@
+{
+  "name": "@grundstein/file-store",
+  "version": "0.0.1-alpha.0",
+  "author": "Wizards & Witches",
+  "homepage": "https://grundstein.github.io/file-store",
+  "license": "AGPL-3.0",
+  "description": "NOT YET BENCHMARKED OR IN PRODUCTION! @grundstein/file-store. pipes the contents of a directory of files into a @grundstein/mem-store.",
+  "main": "src/index.mjs",
+  "engines": {
+    "node": ">=13.5.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "t",
+    "test": "t",
+    "format": "f -w"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grundstein/file-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grundstein/file-store/issues"
+  },
+  "dependencies": {
+    "@grundstein/mem-store": "github:grundstein/mem-store",
+    "@magic/error": "0.0.5",
+    "@magic/fs": "0.0.4",
+    "@magic/mime-types": "0.0.2",
+    "@magic/types": "0.1.11"
+  },
+  "devDependencies": {
+    "@magic/format": "0.0.7",
+    "@magic/test": "0.1.33"
+  },
+  "keywords": [
+    "grundstein",
+    "file-store"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    }
+  ]
+}
