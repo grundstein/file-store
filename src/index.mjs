@@ -8,7 +8,7 @@ import memStore from '@grundstein/mem-store'
 
 import { getCache } from './lib/index.mjs'
 
-const libName = '@grundstein/mem-store'
+const libName = '@grundstein/file-store'
 
 export const fileStore = async (dir = {}) => {
   if (is.empty(dir)) {
