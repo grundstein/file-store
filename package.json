@@ -28,13 +28,14 @@
   "dependencies": {
     "@grundstein/mem-store": "github:grundstein/mem-store",
     "@magic/error": "0.0.5",
-    "@magic/fs": "0.0.4",
+    "@magic/fs": "0.0.5",
+    "@magic/log": "0.1.4",
     "@magic/mime-types": "0.0.2",
     "@magic/types": "0.1.11"
   },
   "devDependencies": {
-    "@magic/format": "0.0.7",
-    "@magic/test": "0.1.33"
+    "@magic/format": "0.0.8",
+    "@magic/test": "0.1.42"
   },
   "keywords": [
     "grundstein",
