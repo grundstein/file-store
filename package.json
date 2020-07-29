@@ -27,15 +27,15 @@
   },
   "dependencies": {
     "@grundstein/mem-store": "github:grundstein/mem-store",
-    "@magic/error": "0.0.5",
-    "@magic/fs": "0.0.5",
-    "@magic/log": "0.1.4",
-    "@magic/mime-types": "0.0.2",
-    "@magic/types": "0.1.11"
+    "@magic/error": "0.0.6",
+    "@magic/fs": "0.0.6",
+    "@magic/log": "0.1.5",
+    "@magic/mime-types": "0.0.3",
+    "@magic/types": "0.1.13"
   },
   "devDependencies": {
-    "@magic/format": "0.0.9",
-    "@magic/test": "0.1.43"
+    "@magic/format": "0.0.13",
+    "@magic/test": "0.1.52"
   },
   "keywords": [
     "grundstein",
