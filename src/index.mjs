@@ -32,7 +32,7 @@ export const fileStore = async (dir = {}) => {
     throw error(`${libName}: directory ${dir} does not exist.`, 'DIR_NO_EXIST')
   }
 
-  log.info(`${libName}: loading ${dir}`);
+  log.info(`${libName}: loading ${dir}`)
 
   const cache = await getCache(dir)
 
