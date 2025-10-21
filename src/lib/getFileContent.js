@@ -2,7 +2,7 @@ import path from 'path'
 
 import mimes from '@magic/mime-types'
 
-import { getCompressed } from './getCompressed.mjs'
+import { getCompressed } from './getCompressed.js'
 
 export const getFileContent = dir => async name => {
   const url = name.replace(dir, '')

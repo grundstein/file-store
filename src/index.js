@@ -7,11 +7,11 @@ import log from '@magic/log'
 
 import memStore from '@grundstein/mem-store'
 
-import { getCache } from './lib/index.mjs'
+import { getCache } from './lib/index.js'
 
 const libName = '@grundstein/file-store'
 
-export const fileStore = async (dir = {}) => {
+export const fileStore = async dir => {
   const startTime = log.hrtime()
 
   if (is.empty(dir)) {

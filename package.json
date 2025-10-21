@@ -5,7 +5,8 @@
   "homepage": "https://grundstein.github.io/file-store",
   "license": "AGPL-3.0",
   "description": "NOT YET BENCHMARKED OR IN PRODUCTION! @grundstein/file-store. pipes the contents of a directory of files into a @grundstein/mem-store.",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
+  "type": "module",
   "engines": {
     "node": ">=14.14.0"
   },

@@ -1,6 +1,6 @@
 import fs from '@magic/fs'
 
-import { getFileContent } from './getFileContent.mjs'
+import { getFileContent } from './getFileContent.js'
 
 export const getCache = async dir => {
   const contents = await fs.getFiles(dir)
