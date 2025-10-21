@@ -5,14 +5,17 @@
 reads a directory of files, then initializes a @grundstein/memstore with that data and returns it.
 
 #### [@grundstein/mem-store](https://github.com/grundstein/mem-store)
+
 minimal, memory only, key -> value store for nodejs.
 
 #### installation
+
 ```bash
 npm i @grundstein/file-store
 ```
 
 #### usage
+
 ```javascript
 import fileStore from '@grundstein/file-store'
 
