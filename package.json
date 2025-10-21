@@ -6,6 +6,7 @@
   "license": "AGPL-3.0",
   "description": "NOT YET BENCHMARKED OR IN PRODUCTION! @grundstein/file-store. pipes the contents of a directory of files into a @grundstein/mem-store.",
   "main": "src/index.js",
+  "types": "types/index.d.ts",
   "type": "module",
   "engines": {
     "node": ">=14.14.0"
@@ -14,10 +15,13 @@
   "scripts": {
     "start": "t",
     "test": "t",
-    "format": "f -w"
+    "format": "f -w",
+    "build": "npm run test && tsc && npm run format",
+    "prepublishOnly": "npm run build"
   },
   "files": [
-    "src"
+    "src",
+    "types"
   ],
   "repository": {
     "type": "git",
@@ -36,7 +40,8 @@
   },
   "devDependencies": {
     "@magic/format": "0.0.68",
-    "@magic/test": "0.2.24"
+    "@magic/test": "0.2.24",
+    "typescript": "5.9.3"
   },
   "keywords": [
     "grundstein",

@@ -11,6 +11,28 @@ import { getCache } from './lib/index.js'
 
 const libName = '@grundstein/file-store'
 
+/**
+ * @typedef {Object} FileObject
+ * @property {string} mime - MIME type of the file
+ * @property {Buffer|false} buffer - File content buffer
+ * @property {Buffer|false} gzip - Gzipped file content buffer
+ * @property {Buffer|false} deflate - Deflated file content buffer
+ * @property {string} name - Full file path
+ * @property {string} extension - File extension
+ * @property {string} url - URL path (relative to directory)
+ */
+
+/**
+ * @typedef {import('@grundstein/mem-store').MemStore<any>} MemStore
+ */
+
+/**
+ * Creates a file store from a directory, loading all files into memory
+ * @param {string} dir - Directory path (absolute or relative)
+ * @returns {Promise<MemStore>} Memory store containing all files
+ * @throws {Error} When directory is empty, not a string, or doesn't exist
+ */
+
 export const fileStore = async dir => {
   const startTime = log.hrtime()
 
