@@ -15,9 +15,11 @@ export const getFileContent = dir => async name => {
   const extension = path.extname(name).substring(1)
   const mimeType = /** @type {keyof typeof mimes} */ (extension)
 
+  const mime = mimes[mimeType]
+
   /** @type {import('../index.js').FileObject} */
   const file = {
-    mime: mimes[mimeType] || 'application/octet-stream',
+    mime,
     buffer: await getCompressed(name),
     gzip: await getCompressed(`${name}.gz`),
     deflate: await getCompressed(`${name}.deflate`),
